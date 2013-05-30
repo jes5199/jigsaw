@@ -10,5 +10,5 @@
   (let [
       toolkit (Toolkit/getDefaultToolkit)
       image (.getImage toolkit "test.jpg") ]
-    (.drawImage g image 0 0 (.getWidth this) (.getHeight this) nil ))
+    (.drawImage g image 20 20 200 200 nil ))
   (.drawOval g 0 0 (.getWidth this) (.getHeight this)))
