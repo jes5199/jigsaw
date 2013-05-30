@@ -1,9 +1,10 @@
-(ns coordinate.jigsaw)
-(import '(javax.swing JPanel JFrame JButton JTextField JScrollPane
-                    JLabel Timer SwingUtilities))
-(import '(java.awt GridBagLayout GridBagConstraints))
+(ns coordinate.jigsaw
+  (:import (javax.swing JPanel JFrame JButton JTextField JScrollPane
+                     JLabel Timer SwingUtilities))
+  (:import (java.awt GridBagLayout GridBagConstraints))
 
-(import '(coordinate PicturePanel))
+  (:import (coordinate PicturePanel))
+)
 
 (defn text-field [value]
   (doto (JTextField. value 15)
