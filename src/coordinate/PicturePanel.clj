@@ -5,4 +5,5 @@
     :exposes-methods {paintComponent parentPaintComponent}))
 
 (defn -paintComponent [this g]
-  (.parentPaintComponent this g))
+  (.parentPaintComponent this g)
+  (.drawOval g 0 0 (.getWidth this) (.getHeight this)))
